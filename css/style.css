@@ -107,6 +107,7 @@
 .cards{
   display:flex;
   justify-content:center;
+  flex-wrap: wrap;
   color: #000000;
 }
 
