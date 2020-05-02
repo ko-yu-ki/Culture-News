@@ -26,6 +26,7 @@
   margin-bottom: 46px;
   display: flex;
   justify-content: space-between; 
+  flex-wrap: wrap;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -35,6 +36,7 @@
 }
 
 .header-nav{
+  display: flex;
   padding-top: 46px;
   color: #000000;
 }
@@ -80,14 +82,9 @@
 
 .hzchtoeto-text{
   margin: 0 auto;
-  padding-top: 139px;
+  padding-top: 135px;
   padding-bottom: 48px;
   width: 456px;
-  text-align: center;
-}
-
- 
-.features{
   text-align: center;
 }
 
@@ -125,7 +122,7 @@
 .card-title{
   margin: 0;
   padding-top: 15px;
-  /* padding-top: 20px; - намеряно в сигме*/
+  /* padding-top: 20px; - намеряно в фигме*/
 }
 
 .card:nth-child(2) .card-title{ 
@@ -148,7 +145,7 @@
 
 .features {
   margin: 50px auto;
-  padding-top: 30px;
+  padding-top: 37px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,41 +153,36 @@
   background-image: url('../img/ellipse-bg.png');
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  text-align: center;
   color:#000;
 }
 
 .features-title {
-  margin: 0;
-  margin-bottom: 35px;
+  margin: 0px auto;
+  padding-bottom: 25px;
 }
 
-.feature-title{
-
+.feature{
+  margin: 11px auto;
 }
 
 .feature-text{
   margin: 0;
   width: 370px;
-  padding-bottom: 24px;
 }
 
 
-.feature-text::after{
+.feature:not(:last-of-type)::after{
   content:'';
-  display: block;
-  position: absolute;
-  padding-top: 21px;
+  position: absolute; 
   left: calc(50% - 50px);
   width: 100px;
-  height: 0px;
   border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
-  /*
-  background-color: rgba(0, 0, 0, 0.2);
-  /*opacity: 0.4; */
+  opacity: 0.4;
 }
 
-
 .feature-button{
+  margin-top: 17px;
   margin-bottom: 36px;
 }
 
@@ -223,9 +215,9 @@
   color: #ffffff;
 }
 
+
 .nav-link{
   padding: 0;
-  margin-right: 50px;
   text-decoration: none;  
 }
 
@@ -245,8 +237,9 @@
   display: flex;
   justify-content: center;
 }
+
 .social-bg{
-  margin-right: 14px;
+  margin-right: 12px;
   width: 47px;
   height: 47px;
 }
